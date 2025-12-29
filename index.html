@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Offline Notepad</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <button id="add-note">＋ New Note</button>
+            <div id="notes-list"></div>
+            <div class="transfer-controls">
+                <button id="export-btn">Export JSON</button>
+                <button id="import-trigger">Import JSON</button>
+                <input type="file" id="import-input" accept=".json" style="display:none;">
+            </div>
+        </aside>
+        
+        <main class="editor">
+            <input type="text" id="note-title" placeholder="Note Title...">
+            <textarea id="note-content" placeholder="Start writing..."></textarea>
+        </main>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
